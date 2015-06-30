@@ -1,0 +1,58 @@
+<div class="mainmenu">
+	<ul>
+		<li class="title">
+			<img src="images/eye-titlemenu.png" alt="eye-titlemenu" width="119" height="44">
+		</li>
+		<li><a href="eye-procedure.html"><img src="images/menu1.png" alt="menu1" width="126" height="35"></a></li>
+		<li><a href="eye-preparation.html"><img src="images/menu2.png" alt="menu2" width="126" height="35"></a></li>
+		<li><a href="eye-what.html"><img src="images/menu3.png" alt="menu3" width="126" height="35"></a></li>
+	</ul>
+	<ul>
+		<li class="title">
+			<img src="images/mounth-titlemenu.png" alt="mounth-titlemenu" width="145" height="33">
+		</li>
+		<li><a href="mouth-procedure.html"><img src="images/menu1.png" alt="menu1" width="126" height="35"></a></li>
+		<li><a href="mouth-preparation.html"><img src="images/menu2.png" alt="menu2" width="126" height="35"></a></li>
+		<li><a href="mouth-what.html"><img src="images/menu3.png" alt="menu3" width="126" height="35"></a></li>
+	</ul>
+	<ul>
+		<li class="title">
+			<img src="images/nose-titlemenu.png" alt="nose-titlemenu" width="112" height="35">
+		</li>
+		<li><a href="nose-procedure.html"><img src="images/menu1.png" alt="menu1" width="126" height="35"></a></li>
+		<li><a href="nose-preparation.html"><img src="images/menu2.png" alt="menu2" width="126" height="35"></a></li>
+		<li><a href="nose-what.html"><img src="images/menu3.png" alt="menu3" width="126" height="35"></a></li>
+	</ul>
+	<ul>
+		<li class="title">
+			<img src="images/face-menutitle.png" alt="face-menutitle" width="111" height="33">
+		</li>
+		<li><a href="face-procedure.html"><img src="images/menu1.png" alt="menu1" width="126" height="35"></a></li>
+		<li><a href="face-preparation.html"><img src="images/menu2.png" alt="menu2" width="126" height="35"></a></li>
+		<li><a href="face-what.html"><img src="images/menu3.png" alt="menu3" width="126" height="35"></a></li>
+	</ul>
+	<div class="topbar">
+		<img src="images/topmenubar.png" alt="topmenubar" style="width: 100%; height: auto;">
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".topbar").click(function(){
+			if($("body").hasClass("menushow")==true){
+				$(".mainmenu").animate({
+					'top': -205+"px"
+				},500);
+				$("body").removeClass("menushow");
+			}else{
+				
+				$(".mainmenu").animate({
+					'top': 0+"px"
+				},500);
+				$("body").addClass("menushow");
+			}
+		})
+		$(".totopbtn img").click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 1000);
+		})
+	})
+</script>
