@@ -1,21 +1,29 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 html {
-  background-color: #fff1e3; }
+  background-color: #fff1e3;
+}
 
 .container {
-  min-width: 1280px;
-  position: relative; }
+  min-width: 1170px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 .topbar {
   width: 100%;
-  height: 30px;
+  height: 26px;
   cursor: pointer;
   position: absolute;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  text-align: center;
+}
 
 .mainmenu {
   position: absolute;
@@ -26,55 +34,59 @@ html {
   height: 235px;
   left: 0;
   top: -205px;
-  /*
-	-moz-transition: all 0.5s ease-in;
-	-webkit-transition: all 0.5s ease-in;
-	-o-transition: all 0.5s ease-in;
-	transition: all 0.5s ease-in;
-	*/ }
-  .mainmenu ul {
-    list-style: none;
-    display: inline;
-    float: left;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 270px;
-    margin-top: 30px; }
-    .mainmenu ul li {
-      width: 100%;
-      text-align: center; }
-      .mainmenu ul li.title {
-        height: 50px; }
-      .mainmenu ul li a img:hover {
-        opacity: 0.4;
-        -moz-transition: all 0.1s ease-in;
-        -webkit-transition: all 0.1s ease-in;
-        -o-transition: all 0.1s ease-in;
-        transition: all 0.1s ease-in; }
-
-/*
-body.menushow{
-	.mainmenu{
-		top:0;
-		-moz-transition: all 0.5s ease-in;
-		-webkit-transition: all 0.5s ease-in;
-		-o-transition: all 0.5s ease-in;
-		transition: all 0.5s ease-in;
-	}
 }
-*/
+
+.mainmenu ul {
+  list-style: none;
+  display: inline;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 270px;
+  margin-top: 30px;
+}
+
+.mainmenu ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.mainmenu ul li.title {
+  height: 50px;
+}
+
+.mainmenu ul li a img:hover {
+  opacity: 0.4;
+  -moz-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
 .totopbtn {
   position: absolute;
   bottom: 30px;
   left: 0;
   width: 100%;
-  text-align: center; }
-  .totopbtn img {
-    cursor: pointer; }
+  text-align: center;
+}
+
+.totopbtn img {
+  cursor: pointer;
+}
 
 a.back {
   width: 180px;
   height: 80px;
   display: block;
   position: absolute;
-  z-index: 1; }
+  z-index: 1;
+}
+
+.mainimg {
+  width: 100%;
+  max-width: 1170px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
